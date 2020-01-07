@@ -7,7 +7,7 @@ def gaps(size):
  
  #proses shell short 
 def shell_sort(alist):
-    def insertion_sort_with_gap(gap):
+    def gapss(gap):
         for i in range(gap, len(alist)):
             temp = alist[i]
             j = i - gap
@@ -17,7 +17,7 @@ def shell_sort(alist):
             alist[j + gap] = temp
  
     for g in gaps(len(alist)):
-        insertion_sort_with_gap(g)
+        gapss(g)
         
 #proses binary search
 def binarySearch(alist, cari, l, x):
