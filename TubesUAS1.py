@@ -53,6 +53,8 @@ def main():
         print("=====================")
         print("Hasil dari shell short")
         #RIO DARMAWAN
+        #MAP FUNCTION
+        print(map(shell_sort,alist))
         datainput(alist)
         print("=====================")
         print("--- %s seconds ---" % (time.time() - start_time))
